@@ -1,0 +1,65 @@
+import random
+sequence = " ctatcgaatg tcatgtcatc tctaggcaac aacaaggtat cagattcaac gtttgagata
+     ggataataca ttttcagaca tttttcaatt tgtgcccccg cacatgttgt ttcttgcgaa
+     aaaacaagaa ataaaactcc tgaaaagtga aatctgtaga gcagttgaag atctttagtc
+     gcaatagatt ttcttaagtg tgccatcgcg atggctgcac cagcagcctg tacgcgtttt
+     tcggacaatt acgacatcaa agaagagttg ggaaaaggag cattctcaat tgtgaaaaga
+     tgtgtccaaa agtcaactgg ctttgaattt gctgcaaaaa ttatcaatac aaaaaaatta
+     actgccagag actttcaaaa actggaacgt gaagcaagga tctgcagaaa gttacaccat
+     cccaacatag tgcggctaca tgacagtata caggaggaga actatcacta ccttgttttt
+     gaccttgtaa ccggtggtga actttttgaa gatatcgttg cacgcgaatt ttattcagaa
+     gctgatgcat cacattgtat tcaacaaata ttggaatcgg tcaatcactg ccaccaaaat
+     ggtgtggtgc accgagatct gaaaccagag aatttactat tagctagtaa ggctaagggt
+     gcagcagtga aactcgctga ctttggtcta gccattgaag ttcaaggcga tcatcaggct
+     tggtttggat ttgccggcac accaggatat ctgtctcctg aggtattgaa aaaggagccc
+     tatgggaaat cggtagacat atgggcatgt ggagttattc tttacatact tcttgtcggt
+     tatccaccct tttgggatga agatcagcac cgactgtact cgcagataaa agcgggagct
+     tatgattatc cgtctccaga atgggatacg gttactccag aagctaaaaa tcttattaat
+     caaatgctaa ccgttaatcc aaataaacga ataactgcag ctgaggcttt aaaacatccg
+     tggatttgtc aacgcgaacg tgtggcttcc gttgtgcatc gccaagaaac cgtagactgt
+     ctcaagaaat ttaatgcgcg gcgcaagcta aagggagcca tacttacgac aatgttggcg
+     accagaaatt tttcgagcag aagtatgata actaaaaaag gtgaaggatc acaggtcaaa
+     gaatcaaccg attcatctag cactactctt gaagacgatg acataaaaga agataaaaaa
+     ggaaccgttg atcgcagtac tacagtcgta tcaaaagagc ctgaagcagc tagacgacaa
+     gaaataataa agataactga gcagttgatt gaagcaatta acagtggcga ctttgatgga
+     tacaccaaaa tatgtgatcc gcatctaact gcctttgagc cggaagcact gggtaacctt
+     gtagaaggaa ttgattttca taaattttat tttgaaaatg ttcttggtaa aaactgcaaa
+     gctataaaca caaccatttt aaatcctcat gtgcacttac ttggtgaaga agccgcttgc
+     attgcctatg tgagacttac gcagtacatt gataagcaag gacatgcaca tacccatcag
+     tccgaggaga cgcgagtctg gcacaaacgc gataacaaat ggcagaatgt tcattttcat
+     cgaagtgcat ctgccaaaat aagcggagca actacattcg attttatacc ccaaaaatag
+     tgggcattaa tcaatggaat ataaactgtc attatgcaca tgttaatgaa agtgctacat
+     ttatgtttag agaacgcaat agtttattgc gaataaagat gctagtgcaa attttattaa
+     tttatttacc ttttgaaata aaactatcta aagcatatat cacattttag atatctcatt
+     gaaccacatt tacttgagaa attaaagtag caaacacaaa tataaagatc aatcacaaat
+     atttgttgta agtgtcgtgg taccaattgt aagcttaaac gttctcaacg gaagaatcaa
+     gtttattatt taactattat tattattatt aaaataaaat tgacaacttt gtatctattg
+     gaacatctaa aataaattcc aataacttta ttgacgtctc aaaacaattg caaacaattt
+     agaacccttg agttatctac taggatacga atatcatttg gtttgcaaag tccgcttatt
+     ctcgttctta aaataaatac acacatataa agtttaataa aacgtgtgag tacatgcgtt
+     tacaaattac tgaagttagc actatcaata tatgtaactg taaagcatta ggttattaca
+     atgaaacata taccatttgg aaaaattaag tacgtttaaa agaaaaaagg aacgaaaatt
+     agctaactga aatataaatc taagtcccaa taattgaaat tatgcgacta cttcgaatta
+     cttatattta cataaatata cttaggcatt ttatccaagt taaaaaatac tttctgtatt
+     tcaccgtaca tatttctttc tgatgttgaa caaacttttt atattttatg ttttaataga
+     aatataactt tgttcttatt atttgaaaag atgtccaagg cttaaaaagt aatccttttt
+     ttgttcatag aattttaaat tcccttttgt tctagaaatt gattgcttgt cttaaaaaaa
+     tgcatgaggg gagccaaaga attatgttta attagtatca tagttgaaaa tataaattca
+     atccaatatc catgtaccaa aagtaattcc aatcaatcca ttgttaagct aacagacgta
+     acataatcaa cggagttggt atcagtatat taacttgatc ttttccaata gatgccgaat
+     agctttttga ttttttacaa ctataacaat gctaaccgtg ttgacaccga ttaaaaatgt
+     aaccgataaa aaattttaaa tatcttcgaa gaatttttaa agataataat aaaaagaatt
+     cttgggacgc taatgcacaa acagcaggaa aaatacctat atctgtcaat agaaacatta
+     agtataatta caaaggttat tgtgtttcgc tttatattgt gtttacacct tatgggcaaa
+     tagctaattt aaacaatgcg atatgataaa cataacaaaa attatatttc ttttttacta
+     aatgaataat tttgtggtat gagcataact gcgaaaataa cttgtaactt aacttaatca
+     ttgtgaaatg attatacatt ttacctgata gtacatgtta aaaaaaaact tggacttaaa
+     cacatttaaa aagtttgcca gatatatttt aaagtaaaaa agattatact acggtctaca
+     ataagttgaa ctttagttgc atcccacggt tttccataat tactcatcaa ttcctttacc
+     aatgcttgca gagtacttga ttctttttgt ctaatactat tggtctatat acagttgctt
+     aaattcaatt tttaggacct aaatgtcttc acaaatcaat tttaataata attacacgat
+     aacaattata cgaacaagct ttggatacat tatattgatc gaaaagcttt cgctcctaag
+     gtaaaagcct ataaaataat aaccgaaaat aatttatgtt tctcaaagta tatccaaata 
+     attataataaatttttttgttagtggatgtcctttatattttgagggaattcaaagcataatgcaatttt
+"
+''.join(random.sample(sequence,len(seuence)))
